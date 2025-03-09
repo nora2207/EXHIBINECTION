@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="scss/main.css">
+  <title>EXHIBINECTION</title>
+</head>
+<body>
+  <!-- header -->
+  <div class="wrap">
+    <div class="header">
+      <div class="logo">
+        <a href="index.html" class="logo">EXHIBINECTION</a>
+      </div>
+      <ul class="link">
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#">Sign up</a></li>
+      </ul>
+    </div>
+    <input type="checkbox" id="cart-toggle" hidden>
+    <div class="cart-overlay"></div>
+    <label for="cart-toggle" class="cart-icon">
+      <span class="material-icons">confirmation_number</span>
+      <span class="num">3</span></label>
+    <div class="cart-list">
+      <h2>Cart List</h2>
+      <div class="cart-list-area">
+        <div class="cart-list-item scroll-card">
+        <span class="material-symbols-outlined">close</span>
+        <div class="show-item">
+          <img class="show-pic" src="images/show1.jpg" alt="">
+          <div class="show-title">
+            <h3>2020 台味設計展</h3>
+            <h4>01 JUN — 31 OCT</h4>
+            <p>全票</p>
+            <h5>NT$350</h5>
+          </div>
+          <div class="show-num">
+            <img src="images/remove.svg" alt="">
+            <p>01</p>
+            <img src="images/add.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="cart-list-item scroll-card">
+        <span class="material-symbols-outlined">close</span>
+        <div class="show-item">
+          <img class="show-pic" src="images/show2.jpg" alt="">
+          <div class="show-title">
+            <h3>No.22 線上設計展</h3>
+            <h4>01 JUN — 31 OCT</h4>
+            <p>全票</p>
+            <h5>NT$350</h5>
+          </div>
+          <div class="show-num">
+            <img src="images/remove.svg" alt="">
+            <p>01</p>
+            <img src="images/add.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="cart-list-item">
+        <span class="material-symbols-outlined">close</span>
+        <div class="show-item">
+          <img class="show-pic" src="images/show3.jpg" alt="">
+          <div class="show-title">
+            <h3>高雄設計節</h3>
+            <h4>01 JUN — 31 OCT</h4>
+            <p>全票</p>
+            <h5>NT$350</h5>
+          </div>
+          <div class="show-num">
+            <img src="images/remove.svg" alt="">
+            <p>01</p>
+            <img src="images/add.svg" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <div class="cart-list-count">
+        <div>小計<span>NT$1050</span></div>
+        <a href="checkout-order.html"><button class="btn-pay">前往結帳</button></a>
+      </div>
+    </div>
+  </div>
+
+    <!-- navbar -->
+  <div class="wrap">
+    <div class="nav-bar">
+      <ul class="nav">
+        <li><a href="#">音樂</a></li>
+        <li><a href="#">戲劇</a></li>
+        <li><a href="design.html">設計</a></li>
+        <li><a href="#">藝術</a></li>
+        <li><a href="#">美食</a></li>
+        <li><a href="#">旅遊</a></li>
+        <li><a href="#">電影</a></li>
+        <li><a href="#">親子</a></li>
+        <li><a href="#">期間限定</a></li>
+      </ul>            
+    </div>
+  </div>
+
+  <!-- product -->
+  <div class="wrap">
+    <div class="product-info">
+      <div class="product-buy-area" data-aos="fade-right" data-aos-duration="1300">
+        <div class="product-img-day">
+          <h3>01 JUN<br> |<br> 31 OCT</h3>  
+        </div>
+        <div class="product-title">
+          <div><h2 data-aos="fade-right" data-aos-duration="1300" data-aos-delay="200">2020 台味設計展</h2>
+          <img data-aos="fade-right" data-aos-duration="1300" data-aos-delay="100" class="fb-img" src="images/facebook-logo.svg" alt=""></div><span>01 JUN — 31 OCT</span>
+        </div>
+        <p data-aos="fade-right" data-aos-duration="1300" data-aos-delay="300">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+      </div>
+      <div class="product-ticket-area" data-aos="fade-left" data-aos-duration="1300">
+        <div class="product-ticket">
+            <div class="product-ticket-num">
+              <img src="images/remove.svg" alt="">
+              <h4>01<br><span>張</span></h4>
+              <img src="images/add.svg" alt="">
+            </div>
+          <div class="product-ticket-type">
+            <h4>NT$350<br><span>票種</span></h4>
+            <ul>
+              <li>學生</li>
+              <li class="ticket-active">全票</li>
+              <li>愛心</li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-ticket-btn">
+          <button class="btn-buy-outline">收藏展覽</button>
+          <button class="btn-buy">購買票券</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-pic" data-aos="zoom-in" data-aos-duration="1300"><img src="images/show7.jpg" alt=""></div>
+    <div class="product-introduce">
+        <img data-aos="zoom-out-right" data-aos-duration="1300" class="product-pic-1" src="images/show8.jpg" alt="">
+        <img data-aos="zoom-out-right" data-aos-duration="1300"  class="product-pic-2" src="images/show7.jpg" alt="">
+      <div class="product-introduce-area">
+        <h4 data-aos="fade-left" data-aos-duration="1300" data-aos-delay="200">藝饗宴</h4>
+        <h5 data-aos="fade-left" data-aos-duration="1300" data-aos-delay="400">Celebration of Style and Art</h5>
+        <p class="text-indent" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="600">匯集美、日、臺等地的藝術家與時尚設計師的作品。以跨界跨域的潮流文化為軸心，結合街頭塗鴉、時尚文化、名牌符號等，藉由各自特殊的表現語彙，傳達對社會當下流行文化的自我反嘲。然而這些深受大眾喜愛的藝術家，也讓「時尚」的概念不再扁平單一，相反的，他們展現了對社會更具魅力的反思，也提出了對於潮文化的自我觀點。</p>
+        <p data-aos="fade-left" data-aos-duration="1300" data-aos-delay="800">從臺灣前輩藝術家林淵、國際知名的超扁平藝術家村上隆、臺灣彩繪雕塑家洪易、以及當代新玩具雕塑代表Kaws 等，都受到許多收藏家的喜愛，同時也是當代藝術史上重要的一員。在這個展區，向藏家借展的作品都是一時之選，也反映出街頭藝術發展的某一種共性。另外，在與時尚跨界的藝術表現上，有永遠嘲諷時尚卻很時尚的藝術家Death NYC、臺灣新銳服裝設計師吳日云、尋找鎂光燈背後那真實藝術家身分的郭彥甫、年輕雕塑家賴冠仲、橫跨藝術與時尚設計師雙重身分的雙人組陳薇與李崇德、創造出療癒角色俊寶Zunbo 的韓國設計團隊Sakubo，以及日本藝術家喜久田尚美、南館麻美子等。展區透過空間的裝置與時尚語彙，完美詮釋了藝術、設計與潮流文化的多元樣貌。</p>
+      </div>  
+    </div>
+  </div>
+
+
+
+  <!-- footer -->
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <div class="wrap">
+    <div class="footer">
+      <div class="footer-swiper">
+        <h2 data-aos="fade-right" data-aos-duration="1300">猜你也喜歡...</h2>
+        <div class="footer-swiper-area" data-aos="fade-left" data-aos-duration="1300">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="images/show4.jpg" alt="pic1" /><h3>No.22 線上設計展</h3><p>$350</p></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/show5.jpg" alt="pic2" /><h3>No.23 線上設計展</h3><p>$350</p></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/show6.jpg" alt="pic3" /><h3>No.24 線上設計展</h3><p>$350</p></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/show4.jpg" alt="pic1" /><h3>No.22 線上設計展</h3><p>$350</p></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/show5.jpg" alt="pic2" /><h3>No.23 線上設計展</h3><p>$350</p></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/show6.jpg" alt="pic3" /><h3>No.24 線上設計展</h3><p>$350</p></a></div>
+            </div>
+        </div>
+        </div>
+      </div>
+    
+      <div class="footer-connect">
+        <div class="footer-subscribe">
+          <div class="title">
+            <h3 data-aos="fade-right" data-aos-duration="1300">想收到最新消息嗎？</h3>
+            <h3 data-aos="fade-right" data-aos-duration="1300" data-aos-delay="200">快訂閱我們！</h3>
+            <div class="input-email" data-aos="fade-right" data-aos-duration="1300" data-aos-delay="400">
+              <input type="email" placeholder="輸入您的電子信箱">
+              <button type="submit" class="btn-pink">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-link">
+        <div class="footer-logo">
+          <a href="index.html">EXHIBINECTION </a>
+          <p>© 2020. All Rights Reserved.</p>
+        </div>
+        <ul class="link">
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/carlist.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,71 @@
+.checkout-finish {
+  margin: 0 15%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  @include rwd($xl){
+    margin: 0 7%;
+  }
+  @include rwd($md) {
+    margin: 0 15px;
+  }
+  .checkout-number {
+    width: 540px;
+    .finish-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $primary-color;
+      padding-top: 102px;
+      @include rwd($md) {
+        padding-top: 42px;
+      }
+      img {
+      width: 44px;
+      }
+      h3 {
+        font-size: $font-m;
+        margin-top: 8px;
+        margin-bottom: 24px;
+      }
+    }
+    h4 {
+      font-size: $font-s;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: $font-l;
+      color: $primary-color;
+      text-align: center;
+    }
+    p {
+      margin-top: 48px;
+      margin-bottom: 96px;
+      line-height: 1.5;
+      font-size: $font-s;
+      @include rwd($md) {
+        margin-top: 42px;
+        margin-bottom: 80px;
+      }
+    }
+    .finish-btn {
+      display: flex;
+      justify-content: center;
+      button {
+        width: 255px;
+        padding: 10px 0;
+        @include rwd($md) {
+          width: 165px;
+        }
+      }
+      .btn-continue {
+        @include button-outline($primary-color, $white, $primary-color);
+        margin-right: 7px;
+      }
+      .btn-finish {
+        @include button-variant($white, $accent-color, $accent-color);
+        margin-left: 7px;
+      }
+    }
+  }
+}

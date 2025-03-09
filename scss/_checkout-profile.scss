@@ -1,0 +1,339 @@
+.checkout-profile {
+  margin: 0 15%;
+  display: flex;
+  height: calc(100vh - 90px);
+  @include rwd($xl){
+    margin: 0 7%;
+  }
+  @include rwd($lg) {
+    margin: 0 15%;
+    flex-direction: column;
+    height: auto;
+  }
+  @include rwd($md) {
+    margin: 0 4%;
+  }
+  .checkout-profile-list {
+    width: 70%;
+    margin-right: 30px;
+    @include rwd($lg) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  font-size: $font-s;
+  margin-bottom: 28px;
+  @include rwd($md) {
+    font-size: $font-s * 0.875;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $accent-color;
+    z-index: -1;
+  }
+  .step {
+    width: 25%;
+    position: relative;
+    text-align: center;
+    font-weight: 300;
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: white;
+      border: 2px solid $accent-color;
+      border-radius: 50%;
+      display: block;
+      margin: 28px auto 10px auto;
+    }
+  }
+  .step-active {
+    font-weight: bold;
+    &::before {
+      background-color: $accent-color;
+    }
+  }
+}
+.profile-area-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include rwd($lg) {
+    height: auto;
+  }
+}
+.profile-checkout-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  @include rwd($lg) {
+    display: none;
+  }
+  .show-pic-title {
+    display: flex;
+  }
+  .show-pic {
+    width: 160px;
+    height: 84px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+  .show-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: $font-s;
+    .show-title-ticket {
+      display: flex;
+      justify-content: space-between;
+      span {
+      display: none;
+      font-weight: bold;
+      font-size: $font-m;
+      color: $dark;  
+      }
+    }
+  }
+  h2 {
+    font-weight: bold;
+  }
+  p {
+    color: $gray-dark;
+  }
+  h4 {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: $font-m;
+  }
+  .show-num {
+    display: flex;
+    align-items: center;
+    img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      visibility: hidden;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      color: $dark;
+      font-weight: bold;
+      font-size: $font-m;
+    }
+  }
+  .close-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    visibility: hidden;
+  }
+  span {
+    width: 24px;
+    height: 24px;
+  }
+}
+.btn-back {
+  @include button-outline($primary-color, $white, $primary-color);
+  width: 160px;
+  padding: 5px 0;
+  margin-bottom: 30px;
+  @include rwd($lg) {
+    display: none;
+  }
+}
+.checkout-profile-next {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  @include rwd($lg) {
+    width: 100%;
+  }
+  h3 {
+    font-size: $font-m;
+    font-weight: 500;
+    margin-top: 92px;
+    padding-top: 5px;
+    @include rwd($lg) {
+      margin-top: 0;
+    }
+  }
+  label {
+    font-size: $font-s;
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
+  input {
+    width: 100%;
+    padding: 7px 12px;
+    font-size: $font-s;
+    outline: none;
+    border : solid 1px $gray;
+    border-radius: 3px;
+  }
+  p {
+    color: $primary-color;
+    font-size: $font-s * 0.875;
+    text-align: right;
+    margin-top: 5px;
+  }
+  .checkout-profile-count {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  .subtotal {
+    margin-top: 50px;
+  }
+  .checkout-profile-total {
+    font-size: $font-m;
+  }
+  .fw-m {
+    font-weight: 500;
+  }
+  .fw-l {
+    font-weight: 300;
+  }
+  label {
+    display: block;
+  }
+  .btn-group {
+    @include rwd($lg) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      width: 100%;
+    }
+    a {
+      @include rwd($lg) {
+        display: block;
+        width: 48%;
+      }
+    }
+    .btn-back2 {
+      display: none;
+      @include rwd($lg) {
+        @include button-outline($primary-color, $white, $primary-color);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+        margin-right: 15px;
+      }
+    }
+    .btn-next {
+      @include button-variant($white, $accent-color, $accent-color);
+        width: 100%;
+        margin-top: 20px;
+        padding: 5px 0;
+      @include rwd($lg) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 0;
+      }
+    }
+  }
+}
+.rwd-profile-checkout-item {
+  display: none;
+  @include rwd($lg) {
+    display: block;
+    margin-top: 24px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .rwd-profile-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .rwd-show-pic-title {
+    display: flex;
+    width: 100%;
+  }
+  .rwd-show-pic {
+    width: 50%;
+    height: 110px;
+    object-fit: cover;
+    margin-right: 15px;
+    @include rwd($md) {
+      height: 84px;
+    }
+  }
+  .rwd-show-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    font-size: $font-s;
+    .rwd-show-title-ticket {
+      display: flex;
+      justify-content: space-between;
+      span {
+        font-weight: bold;
+        color: $dark;
+        font-size: $font-m;    
+      }
+      .rwd-ticket-num {
+        padding-left: 4px;
+      }
+    }
+  }
+  h2 {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  h3 {
+    font-size: $font-s;
+  }
+  p {
+    color: $gray-dark;
+    font-size: $font-s;
+  }
+  h4 {
+    display: none;
+  }
+  .rwd-show-number {
+    display: none;
+    img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      color: $dark;
+      font-weight: bold;
+      font-size: $font-m;
+    }
+  }
+}

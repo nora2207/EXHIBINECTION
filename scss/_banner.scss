@@ -1,0 +1,37 @@
+.banner{
+  background-image: url(../images/banner.jpg);
+  height: 480px;
+  background-position: center center;
+  background-size: cover;
+  color: $white;
+  display: flex;
+  align-items: center;
+  .title {
+    margin-left: 20%;
+    @include rwd($xl) {
+      margin-left: 15%;
+    }
+    @include rwd($lg) {
+      margin-left: 15%;
+    }
+    @include rwd($md) {
+      margin: 0 auto;
+    }
+    .btn-pink {
+      @include button-variant($white, $accent-color, $accent-color);
+      padding: 12px 45px;
+      margin-right: 5px;
+    }
+    .btn-pink-outline {
+      @include button-outline($white, $dark, $white);
+      padding: 12px 45px;
+    }
+  }
+  h1 {
+    font-size: $font-xxl;
+  }
+  p {
+    font-size: $font-m;
+    margin: 20px 0;
+  }
+}

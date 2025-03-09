@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="scss/main.css">
+  <title>EXHIBINECTION</title>
+</head>
+<body>
+  <!-- header -->
+  <div class="wrap">
+    <div class="header">
+      <div class="logo">
+        <a href="index.html" class="logo">EXHIBINECTION</a>
+      </div>
+      <ul class="link">
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#">Sign up</a></li>
+      </ul>
+    </div>
+    <input type="checkbox" id="cart-toggle" hidden>
+    <div class="cart-overlay"></div>
+    <label for="cart-toggle" class="cart-icon">
+      <span class="material-icons">confirmation_number</span>
+      <span class="num">3</span></label>
+    <div class="cart-list">
+      <h2>Cart List</h2>
+      <div class="cart-list-area">
+        <div class="cart-list-item scroll-card">
+        <span class="material-symbols-outlined">close</span>
+        <div class="show-item">
+          <img class="show-pic" src="images/show1.jpg" alt="">
+          <div class="show-title">
+            <h3>2020 台味設計展</h3>
+            <h4>01 JUN — 31 OCT</h4>
+            <p>全票</p>
+            <h5>NT$350</h5>
+          </div>
+          <div class="show-num">
+            <img src="images/remove.svg" alt="">
+            <p>01</p>
+            <img src="images/add.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="cart-list-item scroll-card">
+        <span class="material-symbols-outlined">close</span>
+        <div class="show-item">
+          <img class="show-pic" src="images/show2.jpg" alt="">
+          <div class="show-title">
+            <h3>No.22 線上設計展</h3>
+            <h4>01 JUN — 31 OCT</h4>
+            <p>全票</p>
+            <h5>NT$350</h5>
+          </div>
+          <div class="show-num">
+            <img src="images/remove.svg" alt="">
+            <p>01</p>
+            <img src="images/add.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="cart-list-item">
+        <span class="material-symbols-outlined">close</span>
+        <div class="show-item">
+          <img class="show-pic" src="images/show3.jpg" alt="">
+          <div class="show-title">
+            <h3>高雄設計節</h3>
+            <h4>01 JUN — 31 OCT</h4>
+            <p>全票</p>
+            <h5>NT$350</h5>
+          </div>
+          <div class="show-num">
+            <img src="images/remove.svg" alt="">
+            <p>01</p>
+            <img src="images/add.svg" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <div class="cart-list-count">
+        <div>小計<span>NT$1050</span></div>
+        <a href="checkout-order.html"><button class="btn-pay">前往結帳</button></a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/carlist.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

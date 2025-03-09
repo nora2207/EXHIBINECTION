@@ -1,0 +1,28 @@
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border: $border solid 1px;
+  border-radius: 3px;
+  font-size: $font-s;
+  cursor: pointer;
+  font-weight: bold;
+  &:hover {
+    color: darken($color, 5%);
+    background-color: darken($background, 10%);
+    border: darken($border, 12%) solid 1px;
+  }
+}
+
+@mixin button-outline($color, $word, $border) {
+  color: $color;
+  background: transparent;
+  border: $border solid 1px;
+  border-radius: 3px;
+  font-size: $font-s;
+  cursor: pointer;
+  font-weight: bold;
+  &:hover {
+    color: $word;
+    background: $color;
+  }
+}

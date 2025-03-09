@@ -1,0 +1,30 @@
+$xl: 1280px;
+$lg: 992px;
+$md: 768px;
+$sm: 375px;
+
+@mixin rwd($width) {
+  @media (max-width: $width) {
+    @content
+  }
+}
+
+@include rwd($xl) {
+  
+}
+
+@include rwd($lg) {
+  
+}
+
+@include rwd($md) {
+  
+}
+
+@include rwd($sm) {
+  
+}
+
+// *{
+//   outline:1px solid #000;
+// }

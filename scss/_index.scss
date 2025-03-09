@@ -1,0 +1,221 @@
+@import "buttons";
+@import "banner";
+@import "navbar";
+@import "footer";
+
+.showlist {
+  margin: 0 15%;
+  @include rwd($xl){
+    margin: 0 7%;
+  }
+  @include rwd($lg) {
+    margin: 0 2%;
+  }
+  @include rwd($md) {
+    margin: 0 4%;
+  }
+h2 {
+  font-size: $font-xxl;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  @include rwd($md) {
+    margin: 30px auto 15px auto;
+    max-width: 500px;
+  }
+}
+}
+.show {
+  background: $gray-light;
+  display: flex;
+  margin-bottom: 20px;
+  height: 350px;
+  @include rwd($lg) {
+    height: 345px;
+    }
+  @include rwd($md) {
+    display: block;
+    height: auto;
+    margin: 0 auto 16px auto;
+    padding-bottom: 10px;
+    max-width: 500px;
+  }
+  .show-img img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    @include rwd($lg) {
+      width: 345px;
+      height: 345px;
+      }
+    @include rwd($md) {
+      width: 94%;
+      margin: 24px 15px 0 15px;
+    }
+  }
+  .show-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    @include rwd($lg) {
+      padding: 10px 10px;
+    }
+    .title {
+      width: 80%;
+      font-size: $font-m;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include rwd($lg) {
+        width: 90%;
+        }
+        @include rwd($md) {
+          width: 100%;
+        } 
+      span {
+        display: none;
+        font-size: $font-s;
+        text-align: right;
+        @include rwd($md) {
+          display: inline-block;
+        }
+        
+      }
+      h4 {
+        font-weight: bold;
+        padding: 10px 0;
+        @include rwd($md) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        img{
+          display: none;
+          @include rwd($md) {
+            display: inline;
+            width: 20px;
+            cursor: pointer;
+            vertical-align: bottom;
+            margin-left: 10px;
+          }
+        }
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      h5 {
+        font-weight: 500;
+        line-height: 1.5;
+        @include rwd($md) {
+          font-size: $font-s;
+          margin-bottom: 20px;
+        }
+      }
+      .btn-purple {
+        @include button-variant($white, $primary-color, $primary-color);
+        padding: 8px 20px;
+        margin-right: 5px;
+      }
+      .btn-purple-outline {
+        @include button-outline($primary-color, $white, $primary-color);
+        padding: 8px 20px;
+      }
+    }
+    .duration {
+      width: 39px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 8px 0;
+      @include rwd($lg) {
+        padding-left: 7px;
+        }
+      @include rwd($md) {
+        display: none;
+      }
+      .date {
+        line-height: 1.7;
+      }
+      img {
+        width: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.live {
+  margin: 0 15%;
+  overflow: hidden;
+  @include rwd($xl){
+    margin: 0 7%;
+  }
+  @include rwd($lg) {
+    margin: 0 2%;
+  }
+  @include rwd($md) {
+    margin: 0 15px;
+  }
+  h2 {
+    font-size: $font-xxl;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    @include rwd($md) {
+      margin: 20px auto 0 auto;
+      max-width: 500px;
+    }
+  }
+  .live-bg {
+    background-image: url(../images/live-bg.png);
+    height: 482px;
+    color: $white;
+    @include rwd($md) {
+      background-position: center center;
+      margin: 12px auto 15px auto;
+      max-width: 500px;
+      height: 464px;
+    }
+  }
+  .live-info {
+    background: #190014cc;
+    width: 445px;
+    height: 482px;
+    padding: 24px;
+    @include rwd($md) {
+      width: 345px;
+      height: 464px;
+      padding-right: 12px;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: $font-xl;
+      margin: 28px 0;
+      span {
+        font-weight: bold;
+      }
+    }
+    img {
+      width: 128px;
+    }
+    h4 {
+      font-size: $font-m;
+      margin: 15px 0;
+    }
+    p {
+      line-height: 1.5;
+      font-weight: 200;
+      font-size: $font-m;
+      width: 397px;
+      @include rwd($md) {
+        font-size: $font-s;
+        width: 297px;
+      }
+    }
+    button {
+      @include button-variant($white, $accent-color, $accent-color);
+      padding: 10px 38px;
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@import "navbar";
+@import "footer";
+
+.design {
+  padding: 52px 0;
+  @include rwd($md) {
+    padding: 44px 15px;
+  }
+  .design-show {
+    display: flex;
+    margin: 0 15%;
+    padding-top: 28px;
+    @include rwd($xl){
+      margin: 0 7%;
+    }
+    @include rwd($lg) {
+      margin: 0 2%;
+    }
+    @include rwd($md) {
+      flex-direction: column-reverse;
+      padding-top: 0;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+  h4 {
+    display: none;
+    @include rwd($lg) {
+      display: block;
+      font-weight: 500;
+      margin-top: 16px;
+      margin-bottom: 20px;
+    }
+  }
+  h2 {
+    font-size: $font-xxl;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    letter-spacing: 3px;
+    @include rwd($lg) {
+      letter-spacing: 0px;
+    }
+    @include rwd($md) {
+      font-size: $font-xl;
+      margin-bottom: 18px;
+    }
+  }
+  p {
+    font-size: $font-s;
+    font-weight: 400;
+    width: 350px;
+    line-height: 1.5;
+    @include rwd($lg) {
+      width: 345px;
+    }
+    @include rwd($md) {
+      width: auto;
+    }
+  }
+  img {
+    width: 445px;
+    height: 285px;
+    margin: 0 30px;
+    @include rwd($xl) {
+      width: 345px;
+      height: 221px;
+    }
+    @include rwd($lg) {
+      margin: 0 10px;
+    }
+    @include rwd($md) {
+      margin: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+  h3 {
+    font-size: $font-m;
+    font-weight: bold;
+    width: 65px;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-end;
+    @include rwd($lg) {
+      display: none;
+    }
+  }
+}
+.show-bg-1 {
+  background: $primary-color;
+  color: $white;
+  display: flex;
+  justify-content: flex-start;
+}
+.show-bg-2 {
+  background: $white;
+  color: $primary-color;
+  display: flex;
+  justify-content: flex-end;
+}
