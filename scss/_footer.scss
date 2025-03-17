@@ -158,3 +158,22 @@
     }
   }
 }
+
+// top
+.top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: $primary-color;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  padding: 7px;
+  @include rwd($md) {
+    display: none;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
